@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+    <html lang="fr">
+
+        <head>
+            <meta charset="UTF-8">
+            <link href="style.css" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+            <title>Jeux vidéo et enseignement</title>
+			
+            <script>
+				
+				var complet = false;
+            	function afficher_Suite() {	
+            		if (!complet) {
+            			complet = true;
+            			document.getElementById("synthese").innerHTML="&emsp;&emsp; Alors que le jeu, censé être une activité sans but éducatif, et sa définition vont à l’encontre du principe d’apprentissage, le lien entre l’enseignement et le jeu vidéo se fait de plus en plus étroit.<br>Il apparaît, ces dernières années, que les moyens d’apprendre ont besoin de changer. On tente d’optimiser et de rentabiliser l’éducation mais sans réel succès. Suite à des recherches montrant l’importance de l’immersion et de la pratique sur l’apprentissage, le marché du jeu vidéo a très vite tenté de se faire sa place dans ce domaine.<br>Il est vrai qu’avec les nouvelles technologies et l’apparition de la réalité virtuelle, le jeu vidéo a fait un bond en avant dans le domaine de l'immersion. Le jeu vidéo éducatif se voulant davantage ludique, retenant l’attention des enfants plus facilement, pouvant entretenir la compétition ou même l’entraide, avait toutes ces chances. Mais les démons du jeu vidéo restent imprégnés dans la conscience collective, les jeux vidéos rendraient violent, asocial ? Ceci ayant pour conséquence de retarder les projets d’intégration du jeu vidéo dans l’éducation.<br>&emsp;&emsp; On peut noter dans certains domaines une forte implantation du jeu vidéo comme méthode d’apprentissage, dans lesquelles elle a fait ses preuves. Ainsi la question de son insertion dans l’éducation des plus jeunes se pose sérieusement. C’est ainsi que le serious game commence à émerger même si il n’est pas mis en avant, fustigé par un corps professoral peu convaincu. En revanche il ne peut se démocratiser, s’étendre, au vu des moyens débloqués par l’Etat. Les seuls domaines où il est réellement exploités sont ceux où l’on est sûr de son efficacité.";
+            			document.getElementById("Lire_Moins").innerHTML="Afficher moins...";
+            		}
+            		else if (complet) {
+            			document.getElementById("synthese").innerHTML="&emsp;&emsp; Alors que le jeu, censé être une activité sans but éducatif, et sa définition vont à l’encontre du principe d’apprentissage, le lien entre l’enseignement et le jeu vidéo se fait de plus en plus étroit.<br>Il apparaît, ces dernières années, que les moyens d’apprendre ont besoin de changer. On tente d’optimiser et de rentabiliser l’éducation mais sans réel succès. Suite à des recherches montrant l’importance de l’immersion et de la pratique sur l’apprentissage, le marché du jeu vidéo a très vite tenté de se faire sa place dans ce domaine.";
+            			document.getElementById("Lire_Moins").innerHTML="Lire la suite...";
+            			complet = false;
+            		}
+            	}
+
+            	function previewTanina() {
+            		document.getElementById("preview").innerHTML="<h2>Le jeu vidéo est-il un outil approprié à l’éducation, et dans quels proportions est-il envisagé ?</h2><br>Le jeu vidéo est un loisir connoté par la notion de plaisir, d’amusement. Il peut donc paraître naturel qu’il soit resté en dehors des salles de classes. Cependant, l’émergence du serious game montre bien l’intérêt et le potentiel du jeu vidéo dans l’enseignement. En effet, quand on parle de jeu vidéo, on pense tout d’abord à de l’aventure, de l’action voire des énigmes, mais très peu à la conjugaison des verbes de l’imparfait du subjonctif...";
+					document.getElementById("preview_img").src="Artt.jpg";
+					document.getElementById("articleT").style.color="#174740";
+					document.getElementById("articleN").style.color="#ffffff";
+					document.getElementById("articleK").style.color="#ffffff";
+					document.getElementById("preview_Article_lien").href="articleTanina.html";
+            	}
+
+           		function previewNathan() {
+           			document.getElementById("preview").innerHTML="<h2>En montrant l'importance de l'immersion et de la pratique sur l’apprentissage, pouvons nous prouver le rôle bénéfique que peut avoir le jeu vidéo sur l'enseignement ?</h2><br>Nous pouvons voir que premièrement l’immersion a un aspect bénéfique sur l'apprentissage dans le cas de l’apprentissage de la langue par exemple le voyage à l’étranger est un excellent moyen d’apprendre. Les cours sont un moyen de nous isoler, pour nous permettre de nous concentrer sur un sujet et nous pousser à réfléchir...";
+					document.getElementById("preview_img").src="Artn.jpg";
+					document.getElementById("articleN").style.color="#174740";
+					document.getElementById("articleK").style.color="#ffffff";
+					document.getElementById("articleT").style.color="#ffffff";
+					document.getElementById("preview_Article_lien").href="articleNathan.html";
+					
+           		}
+           		function previewKevin() {
+           			document.getElementById("preview").innerHTML="<h2>Quels sont les conséquences d’une possible introduction des jeux vidéos dans l’enseignement ?</h2><br>L’intégration du jeu vidéo dans l’enseignement peut-être vu comme quelque chose de bien, puisqu’il permet à l’élève de développer certaines compétences, mais il y a aussi beaucoup de points noirs. En effet, même si aujourd’hui une grande majorité des jeunes jouent aux jeux vidéos, il restent des enfants qui ne jouent et qui n’aiment pas jouer aux jeux vidéo ainsi  “une introduction du jeu vidéo de façon systématique pourrait être contre-productive pour eux” selon un article de l’université de Genève...";
+					document.getElementById("preview_img").src="Artk.jpg";
+					document.getElementById("articleK").style.color="#174740";
+					document.getElementById("articleN").style.color="#ffffff";
+					document.getElementById("articleT").style.color="#ffffff";
+					document.getElementById("preview_Article_lien").href="articleKevin.html";
+					
+           		}
+     	   </script>
+        </head>
+
+        <body onload="previewTanina()">
+
+            <header>
+					<div id="titre"> <a href="#"><h1>JV&E </h1></a> <h2 id="reste"> : Jeux vidéo et éducation.</h2> </div>
+                <nav>
+                	<ul>
+                    	<li><a class="nava" href="accueil.html">Accueil</a></li>
+             	 	<li><a class="nava" href="articleTanina.html">Articles</a>
+             	 		<ul class="subnav">
+		  			<li><a  href="articleTanina.html">Tanina's  article</a></li>
+		  			<li><a  href="articleNathan.html">Nathan's article</a></li>
+		  			<li><a   href="articleKevin.html">Kevin's article&emsp; </a></li>
+		  		</ul>
+		  	</li>
+               	    	<li><a class="nava" href="reference.html">Références</a></li>
+             	 	<li><a class="nava" href="membre.html">Membres</a></li>
+             	   </ul>
+                </nav>
+            </header>
+
+            <div class="clear"></div>
+            <!-- Menu de selection -->
+				<div class="sectionAccueil" id="diff_Article"  >
+					<div class="article1"  onmouseover="previewTanina()">
+						<a href="articleTanina.html" id="articleT">Tanina's article</a>
+					</div>
+
+					<div class="article1"  onmouseover="previewNathan()" >
+						<a href="articleNathan.html" id="articleN">Nathan's article</a>
+					</div>
+					<div class="article1"  onmouseover="previewKevin()" >
+						<a href="articleKevin.html" id="articleK">Kevin's article</a>
+					</div>
+				<div id="preview_Article">
+				<a href="" id="preview_Article_lien">
+					<div id="prview_Article_img">
+						<img id="preview_img" src="Artk.jpg" alt="Articles">
+					</div>
+					<div id="preview_Article_text">
+						<p id="preview"></p>
+					</div>
+					</a>
+				</div>
+				</div>
+				<!-- Zone de la synthèse  -->
+			<div class="sectionSynthese">
+				
+				<h2>Synthèse globale</h2>
+
+				<p id="synthese">&emsp;&emsp; Alors que le jeu, censé être une activité sans but éducatif, et sa définition vont à l’encontre du principe d’apprentissage, le lien entre l’enseignement et le jeu vidéo se fait de plus en plus étroit.<br>Il apparaît, ces dernières années, que les moyens d’apprendre ont besoin de changer. On tente d’optimiser et de rentabiliser l’éducation mais sans réel succès. Suite à des recherches montrant l’importance de l’immersion et de la pratique sur l’apprentissage, le marché du jeu vidéo a très vite tenté de se faire sa place dans ce domaine.<br></p><div onclick="afficher_Suite()" id="Lire_Moins">Lire la suite...</div>
+				
+			</div>
+
+			<div class="clear"></div>
+
+			<footer>
+				<p>Jeux Vidéos et Education (JV&E) - Tous droits réservés</p>
+			</footer>
+
+		</body>
+
+	</html>
