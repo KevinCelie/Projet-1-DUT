@@ -1,6 +1,10 @@
 # Projet-1-DUT
 Projet de milieu d'année de première année de DUT
 
+Pour voir le site : 
+- Télécharger le projet
+- Ouvrir le fichier accueil.html
+
 Projet en groupe
 
 Consigne :
